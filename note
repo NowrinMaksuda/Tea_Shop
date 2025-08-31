@@ -1,0 +1,19 @@
+-- Contact Table
+CREATE TABLE contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Orders Table
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    item VARCHAR(100),
+    quantity INT,
+    discount VARCHAR(50),
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
